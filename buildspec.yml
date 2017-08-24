@@ -1,0 +1,21 @@
+languages:
+  - ubuntu
+
+variables:
+  - key: value
+
+phases:
+  pre:
+    - command: echo "hello world"
+
+  test:
+    - command: echo "test process"
+
+  build:
+    - command: echo "hello world"
+
+  post:
+    - command: echo "hello world
+
+  deploy:
+    - command: echo "hello world"
