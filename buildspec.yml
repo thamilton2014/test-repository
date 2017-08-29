@@ -3,6 +3,7 @@ languages:
 
 variables:
   - key: value
+  - key: value
 
 phases:
   pre:
