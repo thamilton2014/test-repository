@@ -9,7 +9,7 @@ phases:
     - composer install
 
   test:
-    - phpunit
+    - ./vendor/bin/phpunit
 
   build:
     - echo "Build phase"
