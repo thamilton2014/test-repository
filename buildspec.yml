@@ -6,16 +6,16 @@ variables:
 
 phases:
   pre:
-    - command: echo "hello world"
+    - command: echo "Pre phase"
 
   test:
-    - command: echo "test process"
+    - command: echo "Test phase"
 
   build:
-    - command: echo "hello world"
+    - command: echo "Build phase"
 
   post:
-    - command: echo "hello world
+    - command: echo "Post phase"
 
   deploy:
-    - command: echo "hello world"
+    - command: echo "Deploy phase"
