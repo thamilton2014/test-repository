@@ -1,16 +1,15 @@
 languages:
-  - ubuntu
+  - phpunit
 
 variables:
   - key: value
 
 phases:
   pre:
-    - echo "Pre phase"
-    - ps -a
+    - composer install
 
   test:
-    - echo "Test phase"
+    - phpunit
 
   build:
     - echo "Build phase"
