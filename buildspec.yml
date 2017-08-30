@@ -7,16 +7,23 @@ variables:
 
 phases:
   pre:
-    - composer install
+    messages:
+      success: Yay! Tests passed!
+    commands:
+      - composer install
 
   test:
-    - ./vendor/bin/phpunit
+    commands:
+      - ./vendor/bin/phpunit
 
   build:
-    - echo "Build phase"
+    commands:
+      - echo "Build phase"
 
   post:
-    - echo "Post phase"
+    commands:
+      - echo "Post phase"
 
   deploy:
-    - echo "Deploy phase"
+    commands:
+      - echo "Deploy phase"
