@@ -16,7 +16,6 @@ phases:
     description: This is where tests run
     commands:
       - ./vendor/bin/phpunit
-      - false
 
   build:
     commands:
