@@ -24,6 +24,7 @@ phases:
 
   # The building phase in which we compile/archive our codebase.
   build:
+    description: This is where you write your description
     commands:
       - echo "Build phase"
 
