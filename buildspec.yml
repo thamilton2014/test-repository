@@ -37,5 +37,7 @@ phases:
 
   # The deploy phase in which we send our artifacts to a binary repository or rsync data.
   deploy:
+    description: This is the deploy phase. 
     commands:
       - echo "Deploy phase"
+      - ls -l
