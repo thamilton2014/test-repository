@@ -3,19 +3,28 @@ languages:
 
 variables:
   - key: value
+  - key: value
 
 phases:
   pre:
-    - composer install
+    description: This is where installing packages happens.
+    target_url: https://www.google.com
+    commands:
+      - composer install
 
   test:
-    - ./vendor/bin/phpunit
+    description: This is where tests run
+    commands:
+      - ./vendor/bin/phpunit
 
   build:
-    - echo "Build phase"
+    commands:
+      - echo "Build phase"
 
   post:
-    - echo "Post phase"
+    commands:
+      - echo "Post phase"
 
   deploy:
-    - echo "Deploy phase"
+    commands:
+      - echo "Deploy phase"
