@@ -19,6 +19,7 @@ phases:
   test:
     description: This is where tests run
     commands:
+      - echo "Testing phase"
       - ./vendor/bin/phpunit
 
   # The building phase in which we compile/archive our codebase.
