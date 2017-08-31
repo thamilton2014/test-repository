@@ -1,6 +1,5 @@
 # This selects the docker image you want to use.
-languages:
-  - phpunit
+languages: phpunit/phpunit
 
 # Sets the environment variables for docker containers.
 variables:
